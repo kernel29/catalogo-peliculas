@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+html {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  max-width: 1100px;
+  background-color: #fff;
+  width: 100%;
+}
+
+header {
+  box-shadow: 5px 5px 10px rgb(85, 83, 83);
+  background-image: linear-gradient(to right, #7cb3e2, #448FCF);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1100px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  height: 66px;
+}
+
+main {
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+section {
+  background-color: #dcdcdc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-style: groove;
+  margin: 10px 15px 15px;
+}
+
+footer {
+  height: 66px;
+  background-image: linear-gradient(to right, #7cb3e2, #448FCF);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+}
+
+span {
+  color: #fff;
+  text-shadow: -3px 2px rgba(0, 0, 0, .5);
+  font-size: 3.5rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  box-shadow: 5px 5px 10px rgb(85, 83, 83);
+  margin: 10px;
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+}
+
+/* estilos de la pagina ppal index.html*/
+.section-index {
+  margin-top: 15px;
+}
+
+.nav-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-index {
+  margin-top: -8px;
+}
+
+.header-index {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* botones del menu principal */
+.button {
+  box-shadow: 5px 5px 10px rgb(85, 83, 83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 36px;
+  max-width: 278px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#448ecf), to(#79b2e1));
+  font: 700 20px arial;
+}
+
+.button:hover,
+.button:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#29557c), to(#79b2e1));
+}
+
+/* Estilos de la informacion detallada de la pelicula */
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 132px);
+}
+
+.containerInfo img {
+  margin: 1em;
+  width: 360px;
+  height: auto;
+  cursor: auto;
+}
+
+.containerInfo h3 {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.containerInfo p {
+  margin: 0.5em 1em 1em 1em;
+}
+
+a img {
+  width: 143px;
+  height: 200px;
+}
+
+.enlaceGenero {
+  cursor: pointer;
+  margin: 15px 7px;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.btn-cerrar-menu {
+  width: 40px;
+  display: none;
+  margin: 0;
+  box-shadow: none;
+}
+
+.p-main {
+  font-weight: bold;
+  color: black;
+}
+
+/* Boton home y boton menu "hamburguesa" */
+.btn-abrir-menu,
+.home {
+  width: 40px;
+  height: 40px;
+  box-shadow: none;
+}
+
+.btn-abierto.visible {
+  opacity: 3;
+  visibility: visible;
+}
+
+.header-peliculas h2 {
+  display: block;
+}
+
+.btn-abrir-menu,
+.btn-cerrar-menu {
+  display: block;
+}
+
+.btn-abierto {
+  width: 40%;
+  max-width: 250px;
+  /* opacity: 0; */
+  visibility: hidden;
+  gap: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #448ecf;
+  padding: 0.6rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+
+@media screen and (max-width: 400px) {
+  .pelis {
+    width: 129px;
+    height: auto;
+  }
+
+  .nombre {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .pelis {
+    width: 103px;
+    height: auto;
+  }
+
+  .nombre {
+    font-size: 1.2em;
+  }
+}
+
+
+@media screen and (max-width: 410px) {
+  .containerInfo img {
+    width: 88%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .button {
+    font-size: 1.0em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .containerInfo {
+    height: 100%;
+  }
+
+}
